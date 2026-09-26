@@ -293,6 +293,24 @@
             transform: translateY(0);
         }
 
+        .register-link {
+    text-align: center;
+    margin-top: 18px;
+    color: #75675d;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #8b5e3c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    color: #4b2e22;
+    text-decoration: underline;
+}
+
 
         /* =========================
            FOOTER
@@ -477,6 +495,13 @@
             >
                 Login
             </button>
+
+            @if (Route::has('register'))
+            <div class="register-link">
+                Don't have an account?
+                <a href="{{ route('register') }}">Register</a>
+            </div>
+            @endif
 
         </form>
 
