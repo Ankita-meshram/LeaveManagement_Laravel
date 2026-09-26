@@ -2,13 +2,13 @@
 
 A simple web-based Leave Management System built using Laravel.
 
-## About the Project
+## About the Project 
 
 This system helps employees apply for leave and allows managers to manage leave requests easily.
 
 ## Features
 
-### Employee
+### 1. Employee
 - Register and login
 - View dashboard
 - Apply for leave
@@ -20,7 +20,7 @@ This system helps employees apply for leave and allows managers to manage leave 
 - Change password
 - Reset password
 
-### Manager
+### 2. Manager
 - Manager login
 - View dashboard
 - View employees
@@ -30,7 +30,7 @@ This system helps employees apply for leave and allows managers to manage leave 
 - Manage leave types
 - Add, edit and delete leave types
 
-## Leave Types
+## 3. Leave Types
 
 The manager can create different leave types and set the maximum number of days allowed for each type.
 
@@ -44,43 +44,68 @@ The manager can create different leave types and set the maximum number of days 
 - JavaScript
 - Blade
 
-⚙️ Installation
-1. Clone the Repository
+## ⚙️ Installation
+### 1. Clone the Repository
+```bash
 git clone https://github.com/Ankita-meshram/LeaveManagement_Laravel.git
-2. Open the Project
+```
+
+### 2. Open the Project
+```bash
 cd LeaveManagement_Laravel
-3. Install PHP Dependencies
+```
+
+### 3. Install PHP Dependencies
+```bash
 composer install
-4. Install Frontend Dependencies
+```
+
+### 4. Install Frontend Dependencies
+```bash
 npm install
-5. Create Environment File
+```
+
+### 5. Create Environment File
+```bash
 copy .env.example .env
-6. Generate Application Key
+```
+
+### 6. Generate Application Key
+```bash
 php artisan key:generate
-7. Configure Database
+```
 
+### 7. Configure Database
 Open the .env file and add your MySQL database details:
-
+```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=leave_management
 DB_USERNAME=root
 DB_PASSWORD=
-8. Run Database Migrations
+```
+
+### 8. Run Database Migrations
+```bash
 php artisan migrate
-9. Start Laravel Server
+```
+
+### 9. Start Laravel Server
+```bash
 php artisan serve
-10. Start Vite
+```
 
+### 10. Start Vite
 Open another terminal and run:
-
+```bash
 npm run dev
+```
 
 The application will be available at:
-
+```bash
 http://127.0.0.1:8000
-
+```
 
 ## 📂 Project Structure
 
