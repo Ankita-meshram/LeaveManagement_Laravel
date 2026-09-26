@@ -191,6 +191,18 @@ LeaveManagement_Laravel/
 ├── vite.config.js
 └── README.md
 ```
+## Screenshots 
+### 1. Login Page
+<img width="761" height="467" alt="image" src="https://github.com/user-attachments/assets/b35a4331-7868-4564-aaef-f7dd8261f2e9" />
+
+### 2. Register Page
+<img width="782" height="467" alt="image" src="https://github.com/user-attachments/assets/960a5760-6dea-4477-b721-fd09dc8c371a" />
+
+### 3. Employee Dashboard
+<img width="959" height="472" alt="image" src="https://github.com/user-attachments/assets/a7e8efbd-71c2-49c9-a687-e77afa4a5866" />
+
+### 4. Manager Dashboard
+<img width="929" height="441" alt="image" src="https://github.com/user-attachments/assets/327af8c9-65d5-4f14-a275-469cb8dc169e" />
 
 ## How to Run the Project
 - Clone the repository.
