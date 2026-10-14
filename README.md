@@ -1,59 +1,201 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Leave Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 📌 Introduction
 
-## About Laravel
+The Leave Management System is a web-based application developed using Laravel. It helps employees apply for leave and allows managers to manage, approve, or reject leave requests easily.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🎯 Project Objective
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- To simplify the leave application process.
+- To manage employee leave records digitally.
+- To help managers review leave requests efficiently.
+- To maintain leave status and records in one place.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Features
 
-## Learning Laravel
+- User Registration and Login
+- Forgot and Reset Password
+- Employee Dashboard
+- Manager Dashboard
+- Apply for Leave
+- Select Leave Type
+- View Leave History
+- Cancel Pending Leave Requests
+- Approve or Reject Leave Requests
+- Manage Employees and Leave Types
+- Track Pending, Approved, and Rejected Requests
+- Form Validation and Authentication
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 👤 Employee Module
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Employees can:
 
-## Laravel Sponsors
+- Register and log in to their accounts.
+- View their dashboard.
+- Apply for leave by selecting the leave type and dates.
+- Enter a reason for leave.
+- View their leave application history.
+- Check leave request status.
+- Cancel pending leave requests.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 👨‍💼 Manager/Admin Module
 
-### Premium Partners
+Managers can:
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- Log in to the manager dashboard.
+- View registered employees.
+- View all leave requests.
+- Approve or reject leave applications.
+- Manage leave types.
+- Monitor pending, approved, and rejected requests.
 
-## Contributing
+## 🔐 Authentication
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+The system provides registration, login, logout, and password recovery features through Laravel authentication functionality.
 
-## Code of Conduct
+Access to employee and manager features depends on the user's role and permissions.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🛠️ Technologies Used
 
-## Security Vulnerabilities
+- Backend: Laravel 12
+- Programming Language: PHP 8.2
+- Database: MySQL
+- Frontend: HTML, CSS, JavaScript, Blade
+- Build Tool: Vite
+- Package Managers: Composer and npm
+- Version Control: Git and GitHub
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 📂 Project Structure
+'''
+LeaveManagement/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   └── Middleware/
+│   └── Models/
+├── bootstrap/
+├── config/
+├── database/
+│   ├── migrations/
+│   └── seeders/
+├── public/
+├── resources/
+│   ├── css/
+│   ├── js/
+│   └── views/
+├── routes/
+│   ├── web.php
+│   └── auth.php
+├── storage/
+├── tests/
+├── .env.example
+├── artisan
+├── composer.json
+├── package.json
+└── README.md
+'''
+Note: The structure above is a general overview. Actual folders may vary depending on the current project files.
 
-## License
+## ⚙️ Installation and Setup
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 1. Clone the Repository
+'''
+git clone https://github.com/Ankita-meshram/LeaveManagement_Laravel.git
+'''
+
+### 2. Open the Project Folder
+'''
+cd LeaveManagement_Laravel
+'''
+
+### 3. Install PHP Dependencies
+'''
+composer install
+'''
+
+### 4. Create the Environment File
+'''
+copy .env.example .env
+'''
+
+### 5. Generate the Application Key
+'''
+php artisan key:generate
+'''
+
+### 6. Configure the Database
+
+Open the ".env" file and configure your MySQL database details:
+'''
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=leave_management
+DB_USERNAME=root
+DB_PASSWORD=
+'''
+Create the "leave_management" database in MySQL before running migrations. Update the username and password according to your setup.
+
+### 7. Run Database Migrations
+'''
+php artisan migrate
+'''
+
+### 8. Install Frontend Dependencies
+'''
+npm install
+'''
+
+### 9. Build Frontend Assets
+'''
+npm run build
+'''
+
+### 10. Start the Application
+'''
+php artisan serve
+'''
+
+Open the local URL displayed in the terminal, usually:
+'''
+http://127.0.0.1:8000
+'''
+
+## 🔄 Application Workflow
+
+1. An employee registers or logs in.
+2. The employee opens the dashboard and submits a leave application.
+3. The leave request is saved with a pending status.
+4. The manager reviews the request.
+5. The manager approves or rejects the request.
+6. The employee checks the updated status on the dashboard or leave history page.
+
+## 🔒 Security
+
+- Authentication for registered users.
+- Role-based access to employee and manager sections.
+- Server-side validation of submitted information.
+- Database configuration through environment variables.
+- Password management through Laravel authentication features.
+
+Important: Never upload your actual ".env" file, database credentials, or application secrets to GitHub.
+
+## 🚀 Future Enhancements
+
+- Email notifications for leave status updates.
+- Leave balance calculation.
+- Calendar-based leave tracking.
+- Reports and analytics.
+- Improved mobile-responsive interface.
+
+## 👩‍💻 Developer
+
+Ankita Meshram
+
+MCA Student | Laravel Web Development Project
+
+GitHub: "Ankita-meshram" (https://github.com/Ankita-meshram)
+
+## 📄 License
+
+This project was developed for academic and learning purposes.
