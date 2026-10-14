@@ -160,6 +160,20 @@ Open the local URL displayed in the terminal, usually:
 http://127.0.0.1:8000
 ```
 
+## Screenshots
+### 1. Login Page 
+<img width="907" height="452" alt="image" src="https://github.com/user-attachments/assets/28baf166-33d1-4a70-ab14-1ecc1764b9bc" />
+
+### 2. Register Page 
+<img width="801" height="467" alt="image" src="https://github.com/user-attachments/assets/bf8b4c03-3dac-4d3e-9057-ea312e31ecae" />
+
+### 3. Employee Dashboard
+<img width="955" height="461" alt="image" src="https://github.com/user-attachments/assets/08b45fa5-997b-41e9-a9f7-a3ae649f000e" />
+
+## 4. Manager Dashboard 
+<img width="951" height="480" alt="image" src="https://github.com/user-attachments/assets/8e035757-ff46-4479-8b25-53628158fbf4" />
+
+
 ## 🔄 Application Workflow
 
 1. An employee registers or logs in.
